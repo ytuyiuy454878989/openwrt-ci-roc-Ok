@@ -1,5 +1,8 @@
 name: JDCloud-ImmortalWrt
-
+# 新增这一段，提升token权限
+permissions:
+  contents: write
+  pull-requests: write
 on:
   workflow_dispatch:
   workflow_call:
