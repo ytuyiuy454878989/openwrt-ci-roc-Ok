@@ -109,5 +109,3 @@ echo "baidu.com"  > package/luci-app-passwall/luci-app-passwall/root/usr/share/p
 #git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei
 #git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier
 #git clone --depth=1 https://github.com/gngpp/thunder
-
-
