@@ -82,9 +82,7 @@ git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-a
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone --depth=1 https://github.com/laipeng668/luci-app-gecoosac package/luci-app-gecoosac
 git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-app-athena-led
-git clone --depth=1 hhttps://github.com/rufengsuixing/luci-app-adguardhom
-git clone --depth=1 https://github.com/wkccd/quickfile/releases/tag/v2026.05.18
-git clone --depth=1 https://github.com/gngpp/thunder
+
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 
 ### PassWall & OpenClash ###
@@ -92,13 +90,20 @@ chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app
 # 移除 OpenWrt Feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
 git clone --depth=1 https://github.com/Openwrt-Passwall/openwrt-passwall-packages package/passwall-packages
-
 # 移除 OpenWrt Feeds 过时的LuCI版本
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-openclash
 git clone --depth=1 https://github.com/Openwrt-Passwall/openwrt-passwall package/luci-app-passwall
 git clone --depth=1 https://github.com/Openwrt-Passwall/openwrt-passwall2 package/luci-app-passwall2
 git clone --depth=1 https://github.com/vernesong/OpenClash package/luci-app-openclash
+
+#自行添加的app
+git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-adguardhome
+git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-quickfile
+git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei
+git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier
+git clone --depth=1 https://github.com/gngpp/thunder
+
 
 # 清理 PassWall 的 chnlist 规则文件
 echo "baidu.com"  > package/luci-app-passwall/luci-app-passwall/root/usr/share/passwall/rules/chnlist
