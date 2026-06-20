@@ -98,10 +98,10 @@ git clone --depth=1 https://github.com/Openwrt-Passwall/openwrt-passwall2 packag
 git clone --depth=1 https://github.com/vernesong/OpenClash package/luci-app-openclash
 
 #自行添加的app
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-adguardhome
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-quickfile
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier
+#git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-adguardhome
+#git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-quickfile
+#git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei
+#git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier
 git clone --depth=1 https://github.com/gngpp/thunder
 
 
