@@ -72,13 +72,6 @@ mv -f package/frp feeds/packages/net/frp
 git_sparse_clone frp-toml https://github.com/laipeng668/luci applications/luci-app-frpc applications/luci-app-frps
 mv -f package/luci-app-frpc feeds/luci/applications/luci-app-frpc
 mv -f package/luci-app-frps feeds/luci/applications/luci-app-frps
-#自行添加
-git clone --depth=1 https://github.com/laipeng668/luci/tree/master/applications/luci-app-adguardhome
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-quickfile package/luci-app-quickfile
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei package/luci-app-xunlei
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier package/luci-app-easytier
-git clone --depth=1 https://github.com/gngpp/thunder package/thunder
-#自行添加
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon feeds/luci/themes/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config feeds/luci/applications/luci-app-argon-config
 git clone --depth=1 https://github.com/eamonxg/luci-theme-aurora feeds/luci/themes/luci-theme-aurora
