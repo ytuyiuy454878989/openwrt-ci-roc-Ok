@@ -84,7 +84,7 @@ git clone --depth=1 https://github.com/laipeng668/luci-app-gecoosac package/luci
 git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-app-athena-led
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 #自行添加的app
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-adguardhome package/luci-app-adguardhome
+#git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-adguardhome package/luci-app-adguardhome
 git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-quickfile package/luci-app-quickfile
 git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei package/luci-app-xunlei
 git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier package/luci-app-easytier
