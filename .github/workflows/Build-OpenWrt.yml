@@ -225,6 +225,8 @@ jobs:
           **This is OpenWrt Firmware for ${{ inputs.firmware_tag }}**
           ### 📒 固件信息
           - ${{ inputs.release_summary }}
+          - 预装插件：
+          - "$(grep -oP "luci-app(-[a-zA-Z0-9]{1,}){1,}" ./firmware/*.manifest | awk -F":" '{print $NF}')"  
           - 💻 这是 ${{ inputs.firmware_tag }} 平台使用的 OpenWrt 固件
           - ⚽ 固件源码: ${{ inputs.repo_url }}
           - 💝 源码分支: ${{ inputs.repo_branch }}
