@@ -230,6 +230,8 @@ jobs:
           - 💝 源码分支: ${{ inputs.repo_branch }}
           - 🌐 默认地址: **192.168.2.1**
           - 🔑 默认密码: none
+          - 💝 插件：$(grep -oP "luci-app(-[a-zA-Z0-9]{1,}){1,}" ./firmware/*.manifest | awk -F":" '{print $NF}')
+          
           ### 🧊 固件版本
           - 固件内核版本：**${{ env.VERSION_KERNEL }}**
           - 固件编译前最后一次➦[主源码](${{ inputs.repo_url }})更新记录
