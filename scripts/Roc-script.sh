@@ -95,7 +95,16 @@ chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app
 #git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-xunlei package/luci-app-xunlei
 #git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-easytier package/luci-app-easytier
 #git clone --depth=1 https://github.com/gngpp/thunder package/thunder
+#
+# 新增自定义插件：迅雷、Easytier、quickfile、linkease、store
 
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-xunlei
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-easytier
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-quickfile
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-linkease
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-store
+
+# ================= 新增插件结束 ============
 ### PassWall & OpenClash ###
 
 # 移除 OpenWrt Feeds 自带的核心库
