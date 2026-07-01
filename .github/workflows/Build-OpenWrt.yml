@@ -257,16 +257,3 @@ jobs:
           echo "staging: $(du -sh "$OPENWRT_PATH/staging_dir" | cut -f 1)"
         fi
 
-    - name: Delete Old Workflows(删除旧工作流)
-      if: ${{ inputs.delete_old_workflows }}
-      env:
-        GH_TOKEN: ${{ github.token }}
-      run: |
-        cutoff="$(date -u -d '2 days ago' +%s)"
-        gh run list --limit 100 --json databaseId,createdAt,status --jq '.[] | select(.status != "in_progress" and .status != "queued") | [.databaseId, .createdAt] | @tsv' |
-          while IFS=$'\t' read -r run_id created_at; do
-            run_ts="$(date -u -d "$created_at" +%s)"
-            if [ "$run_ts" -lt "$cutoff" ]; then
-              gh run delete "$run_id"
-            fi
-          done
